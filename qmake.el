@@ -18,7 +18,7 @@
 ;;       disclaimer in the documentation and/or other materials
 ;;       provided with the distribution.
 
-;;     * Neither the name of the EOCC nor the names of its
+;;     * Neither the name of the CoCode nor the names of its
 ;;       contributors may be used to endorse or promote products
 ;;       derived from this software without specific prior written
 ;;       permission.
@@ -36,7 +36,10 @@
 ;; STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ;; ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 ;; OF THE POSSIBILITY OF SUCH DAMAGE.
-
+;;
+;;
+;; Many thanks to the contributors:
+;; Stephan Creutz
 
 
 
@@ -303,7 +306,7 @@
   (setq font-lock-defaults '(qmake-key-words))
   (setq mode-name "qmake mode")
   (set (make-local-variable 'indent-line-function) 'qmake-ident-line)
-
+  (set (make-local-variable 'comment-start) "# ")
 )
 
 
